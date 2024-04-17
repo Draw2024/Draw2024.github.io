@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Pop随时看</title>
+</head>
+<style>
+   
+    ol,ul{
+         
+        font-size: larger;
+       
+        color: #195bc6;
+    }
+    td{font-size: larger;
+       
+       color: #195bc6;}
+       p{
+        font-size: xx-large;
+        
+       }
+       a:hover{
+        color: crimson;
+        cursor: pointer;
+       }h1{
+        cursor: text;
+        
+       }
+       #countdown {  
+            font-size: 22px; 
+           
+        }  
+</style>
+<body>
+   <h1 id="name">今日份K-Pop看点</h1>
+    <br>
+  
+    <br>
+    <p><a href="https://s.weibo.com/weibo?q=%23%E5%BC%A0%E5%85%83%E8%8B%B1%E8%BD%AC%E5%9C%88%23"style="font-weight: 700;">张元英转圈引发热潮</a></p><br>
+    <video controls autoplay muted loop> <source src="./张元英转圈.mp4" ></video> 
+    <h1><a href="https://weibo.com/u/3290016493">点我前往生图聚集地</a></h1>
+   
+    <p style="font-weight: 700;">K-Pop圈大事件</p><ul>
+        <li><a href="https://s.weibo.com/weibo?q=%23%E6%9F%B3%E6%99%BA%E6%95%8F%E6%9D%8E%E5%AE%B0%E6%97%AD%E5%B7%B2%E5%88%86%E6%89%8B%23">🔥柳智敏分手</a></li><br>
+        <li><a href="https://s.weibo.com/weibo?q=%23%E9%BB%84%E6%97%AD%E7%86%99%20%E7%BB%99%E7%B2%89%E4%B8%9D%E4%B8%8B%E8%B7%AA%23">🔥黄旭熙紧急下跪粉丝</a></li>
+        <br><li><a href="https://weibo.com/6555312996/5018297187696723">🔥宁艺卓吉赛尔香港麦当劳插队被当场狂喷</a></li><br>
+        <li><a href="https://weibo.com/7826525638/5018719816256872">🔥申留真鸡皮肤</a></li><br>
+        <li><a href="https://s.weibo.com/weibo?q=%23%E6%96%87%E6%98%A5%E6%9B%9D%E4%B8%AD%E6%9D%91%E4%B8%80%E5%8F%B6%E6%81%8B%E6%83%85%23">🔥中村一叶 恋爱</a></li><br>
+        <li><a href="https://s.weibo.com/weibo?q=%E9%9F%A9%E7%B4%A0%E5%B8%8C%E8%A2%AB%E6%9B%9D%E6%A0%A1%E5%9B%AD%E6%9A%B4%E5%8A%9B">🔥韩素希被曝霸凌</a></li><br>
+        <li><a href="https://s.weibo.com/weibo?q=%23%E5%AD%99%E5%BD%A9%E7%91%9B%E6%81%8B%E6%83%85%23">🔥孙彩瑛恋情</a></li>
+        </ul>
+    <p style="font-weight: 700;">音乐天地</p><ul>
+        <li><a href="https://music.apple.com/cn/artist/riize/1702435257">🤵RIIZE🤵</a></li><br>
+        <li><a href="https://music.apple.com/cn/artist/aespa/1540251304">🦋aespa🦋</a></li><br>
+        <li><a href="https://music.apple.com/cn/artist/nct-127/1235849306">💚NCT-127💚</a></li><br>
+        <li><a href="https://music.apple.com/cn/artist/red-velvet/906961899">💋Red Velvet💋</a></li>
+        </ul>
+    <p style="font-weight: 700;">回归预告</p></ul>
+    <img src="./TS11.cover.jpg" alt="TS11封面"><br>
+    <li><a href="https://s.weibo.com/weibo?q=Taylor%20swift%E6%96%B0%E4%B8%93%E8%BE%91">Taylor Swift--The Tortured Poets Department</a></li><br>
+    <div id="countdown"></div>  
+  
+    <script>  
+        // 设置目标日期  
+        var countDownDate = new Date("Apr 19 , 2024 12:00:00").getTime();  
+  
+        // 更新倒计时的显示  
+        var x = setInterval(function() {  
+            var now = new Date().getTime();  
+            var distance = countDownDate - now;  
+  
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));  
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));  
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));  
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);  
+  
+            document.getElementById("countdown").innerHTML = "距离发行日还有：" + days + "天 " + hours + "小时 "  
+            + minutes + "分钟 " + seconds + "秒 ";  
+  
+            if (distance < 0) {  
+                clearInterval(x);  
+                document.getElementById("countdown").innerHTML = "专辑已发行";  
+            }  
+        }, 1000);  
+    </script> 
+        
+        </ul>
+    <p style="font-weight: 700;">艺人连连看</p>
+    <table border="2">
+        <tr>
+            <td><img src="./螳螂.jpg" alt=""></td>
+            <td><img src="./鸭嘴兽 .png" alt=""></td>
+            <td><img src="./猴子.jpg" alt=""></td>
+            <td><img src="./骷髅.jpg" alt=""></td>
+            <td><img src="./东皇太一.png" alt=""></td>
+            <td><img src="./猪.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <td><a href="https://weibo.com/p/1008081685081608e6293893ec04b7e1f0348e/super_index">柳智敏</a></td>
+            <td><a href="https://weibo.com/p/1008089d541c9fb31c00bfeab06435187be69f/super_index">Sohee</a></td>
+            <td><a href="https://weibo.com/p/1008087141b29ee9650695ddee0cd51ccf44ef/super_index">Lucas</a></td>
+            <td><a href="https://weibo.com/p/10080800c7575a3cb810666df91a5eb2102705/super_index">Mark Lee</a></td>
+            <td><a href="https://weibo.com/p/10080868d76cea78912a2b2913655c36d2dd56">金冬天</a></td>
+            <td><a href="https://weibo.com/p/1008087ccd11d16ab944276c5e8e6e9e577507">宁艺卓</a></td>
+        </tr>
+    </table>
+
+
+
+   
+    
+</body>
+</html>
